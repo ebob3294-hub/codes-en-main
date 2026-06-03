@@ -11,6 +11,7 @@ import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { AboutDialog } from "@/components/AboutDialog";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -108,6 +109,7 @@ function Index() {
                 {all.length}
               </Badge>
               <ThemeToggle />
+              <AboutDialog />
             </div>
           </div>
 
@@ -159,6 +161,10 @@ function Index() {
           </ul>
         )}
       </main>
+
+      <footer className="mt-10 pb-24 text-center text-xs text-muted-foreground">
+        Créé par le développeur <span className="font-semibold text-foreground">Ayoub Sadkouni</span>
+      </footer>
 
       {/* FAB */}
       <Dialog open={open} onOpenChange={setOpen}>
