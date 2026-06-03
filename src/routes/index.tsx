@@ -10,6 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -88,7 +89,7 @@ function Index() {
 
   return (
     <div className="min-h-screen pb-32">
-      <Toaster theme="dark" position="top-center" />
+      <Toaster position="top-center" />
 
       {/* Header */}
       <header className="sticky top-0 z-20 backdrop-blur-xl bg-background/70 border-b border-border/60">
@@ -101,10 +102,13 @@ function Index() {
               <h1 className="text-lg font-bold leading-tight">Protection Civile</h1>
               <p className="text-xs text-muted-foreground">Codes d'intervention</p>
             </div>
-            <Badge variant="outline" className="ml-auto gap-1 border-primary/40 text-primary">
-              <Siren className="size-3" />
-              {all.length}
-            </Badge>
+            <div className="ml-auto flex items-center gap-2">
+              <Badge variant="outline" className="gap-1 border-primary/40 text-primary">
+                <Siren className="size-3" />
+                {all.length}
+              </Badge>
+              <ThemeToggle />
+            </div>
           </div>
 
           {/* Search */}
