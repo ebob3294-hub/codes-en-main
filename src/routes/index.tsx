@@ -11,6 +11,7 @@ import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { AboutDialog } from "@/components/AboutDialog";
 
 export const Route = createFileRoute("/")({
   head: () => ({
