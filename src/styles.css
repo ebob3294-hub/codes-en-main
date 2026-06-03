@@ -88,17 +88,19 @@
   --border: oklch(0.32 0.025 250);
   --input: oklch(0.28 0.025 250);
   --ring: oklch(0.65 0.22 25);
+  --bg-gradient-top: oklch(0.22 0.04 250);
 }
 
 @layer base {
   * { border-color: var(--color-border); }
   body {
-    background: radial-gradient(ellipse at top, oklch(0.22 0.04 250) 0%, var(--color-background) 60%);
+    background: radial-gradient(ellipse at top, var(--bg-gradient-top) 0%, var(--color-background) 60%);
     background-attachment: fixed;
     color: var(--color-foreground);
     -webkit-tap-highlight-color: transparent;
   }
 }
+
 
 @utility glow-primary {
   box-shadow: 0 0 40px -10px var(--color-primary);
