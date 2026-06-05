@@ -7,7 +7,8 @@ export const getRouter = () => {
 
   const router = createRouter({
     routeTree,
-    history: createHashHistory(),
+    // Hash history only in the browser (Capacitor WebView). SSR has no window.
+    ...(typeof window !== "undefined" ? { history: createHashHistory() } : {}),
     context: { queryClient },
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
