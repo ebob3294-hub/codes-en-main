@@ -1,5 +1,5 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogDescription } from "@/components/ui/dialog";
-import { Info, Mail, Shield, Search, Plus, Code2 } from "lucide-react";
+import { Info, Mail, Shield, Search, Plus, Code2, Wifi, Smartphone } from "lucide-react";
 
 export function AboutDialog() {
   return (
@@ -20,11 +20,13 @@ export function AboutDialog() {
           <DialogTitle>À propos de l'application</DialogTitle>
           <p className="text-base font-semibold text-primary">Rescue Guide Pro</p>
           <DialogDescription>
-            Outil de terrain pour les agents de la Protection Civile : retrouver instantanément
-            les codes d'intervention liés à chaque type de mission.
+            Application mobile dédiée aux agents de la Protection Civile : un guide rapide
+            et hors-ligne pour identifier les codes d'intervention adaptés à chaque mission
+            de secours sur le terrain.
           </DialogDescription>
         </DialogHeader>
 
+        <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mt-3">Fonctionnalités principales</p>
         <ul className="space-y-3 mt-2">
           <li className="flex gap-3">
             <Search className="size-5 text-primary shrink-0 mt-0.5" />
@@ -47,7 +49,22 @@ export function AboutDialog() {
               <p className="text-xs text-muted-foreground">Grille des risques et missions de la Protection Civile.</p>
             </div>
           </li>
+          <li className="flex gap-3">
+            <Wifi className="size-5 text-primary shrink-0 mt-0.5" />
+            <div>
+              <p className="text-sm font-medium">Fonctionne hors-ligne</p>
+              <p className="text-xs text-muted-foreground">Accès complet aux codes sans connexion internet sur le terrain.</p>
+            </div>
+          </li>
+          <li className="flex gap-3">
+            <Smartphone className="size-5 text-primary shrink-0 mt-0.5" />
+            <div>
+              <p className="text-sm font-medium">Optimisé pour mobile</p>
+              <p className="text-xs text-muted-foreground">Interface rapide et lisible, pensée pour une utilisation en intervention.</p>
+            </div>
+          </li>
         </ul>
+
 
         <div className="mt-4 p-4 rounded-xl bg-muted/60 border border-border">
           <p className="text-xs text-muted-foreground">Créé par le développeur</p>
