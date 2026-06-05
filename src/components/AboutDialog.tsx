@@ -18,6 +18,7 @@ export function AboutDialog() {
             <Shield className="size-6 text-primary" strokeWidth={2.5} />
           </div>
           <DialogTitle>À propos de l'application</DialogTitle>
+          <p className="text-base font-semibold text-primary">Rescue Guide Pro</p>
           <DialogDescription>
             Outil de terrain pour les agents de la Protection Civile : retrouver instantanément
             les codes d'intervention liés à chaque type de mission.
