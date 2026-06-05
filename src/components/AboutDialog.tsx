@@ -1,5 +1,5 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogDescription } from "@/components/ui/dialog";
-import { Info, Mail, Shield, Search, Plus, Code2 } from "lucide-react";
+import { Info, Mail, Shield, Search, Plus, Code2, Wifi, Smartphone } from "lucide-react";
 
 export function AboutDialog() {
   return (
