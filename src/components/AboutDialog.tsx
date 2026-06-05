@@ -20,8 +20,9 @@ export function AboutDialog() {
           <DialogTitle>À propos de l'application</DialogTitle>
           <p className="text-base font-semibold text-primary">Rescue Guide Pro</p>
           <DialogDescription>
-            Outil de terrain pour les agents de la Protection Civile : retrouver instantanément
-            les codes d'intervention liés à chaque type de mission.
+            Application mobile dédiée aux agents de la Protection Civile : un guide rapide
+            et hors-ligne pour identifier les codes d'intervention adaptés à chaque mission
+            de secours sur le terrain.
           </DialogDescription>
         </DialogHeader>
 
