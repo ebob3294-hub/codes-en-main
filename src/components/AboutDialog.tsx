@@ -26,6 +26,7 @@ export function AboutDialog() {
           </DialogDescription>
         </DialogHeader>
 
+        <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mt-3">Fonctionnalités principales</p>
         <ul className="space-y-3 mt-2">
           <li className="flex gap-3">
             <Search className="size-5 text-primary shrink-0 mt-0.5" />
