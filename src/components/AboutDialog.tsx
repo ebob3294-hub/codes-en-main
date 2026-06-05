@@ -49,7 +49,22 @@ export function AboutDialog() {
               <p className="text-xs text-muted-foreground">Grille des risques et missions de la Protection Civile.</p>
             </div>
           </li>
+          <li className="flex gap-3">
+            <Wifi className="size-5 text-primary shrink-0 mt-0.5" />
+            <div>
+              <p className="text-sm font-medium">Fonctionne hors-ligne</p>
+              <p className="text-xs text-muted-foreground">Accès complet aux codes sans connexion internet sur le terrain.</p>
+            </div>
+          </li>
+          <li className="flex gap-3">
+            <Smartphone className="size-5 text-primary shrink-0 mt-0.5" />
+            <div>
+              <p className="text-sm font-medium">Optimisé pour mobile</p>
+              <p className="text-xs text-muted-foreground">Interface rapide et lisible, pensée pour une utilisation en intervention.</p>
+            </div>
+          </li>
         </ul>
+
 
         <div className="mt-4 p-4 rounded-xl bg-muted/60 border border-border">
           <p className="text-xs text-muted-foreground">Créé par le développeur</p>
