@@ -5,6 +5,12 @@ import { Button } from "@/components/ui/button";
 
 const STORAGE_KEY = "pc_app_unlocked_v1";
 const PASSWORD = "protection-civile";
+const LOCK_EVENT = "pc:lock";
+
+export function lockApp() {
+  try { localStorage.removeItem(STORAGE_KEY); } catch {}
+  window.dispatchEvent(new Event(LOCK_EVENT));
+}
 
 export function PasswordGate({ children }: { children: ReactNode }) {
   const [unlocked, setUnlocked] = useState(false);
@@ -17,6 +23,9 @@ export function PasswordGate({ children }: { children: ReactNode }) {
       if (localStorage.getItem(STORAGE_KEY) === "1") setUnlocked(true);
     } catch {}
     setReady(true);
+    const onLock = () => { setUnlocked(false); setValue(""); setError(false); };
+    window.addEventListener(LOCK_EVENT, onLock);
+    return () => window.removeEventListener(LOCK_EVENT, onLock);
   }, []);
 
   if (!ready) return null;
