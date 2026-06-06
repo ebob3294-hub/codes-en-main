@@ -48,7 +48,7 @@ export function PasswordGate({ children }: { children: ReactNode }) {
           <div className="size-16 mx-auto rounded-2xl bg-primary/15 grid place-items-center glow-primary">
             <Shield className="size-8 text-primary" strokeWidth={2.5} />
           </div>
-          <h1 className="text-xl font-bold">Protection Civile</h1>
+          <h1 className="text-xl font-bold">Rescue Guide Pro</h1>
           <p className="text-sm text-muted-foreground">Veuillez saisir le mot de passe pour accéder à l'application</p>
         </div>
         <div className="relative">
