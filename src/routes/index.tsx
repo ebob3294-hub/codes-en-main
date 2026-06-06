@@ -101,7 +101,7 @@ function Index() {
               <Shield className="size-6 text-primary" strokeWidth={2.5} />
             </div>
             <div>
-              <h1 className="text-lg font-bold leading-tight">Protection Civile</h1>
+              <h1 className="text-lg font-bold leading-tight">Rescue Guide Pro</h1>
               <p className="text-xs text-muted-foreground">Codes d'intervention</p>
             </div>
             <div className="ml-auto flex items-center gap-2">
