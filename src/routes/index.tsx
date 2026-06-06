@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
-import { Search, Plus, Shield, Trash2, X, Siren } from "lucide-react";
+import { Search, Plus, Shield, Trash2, X, Siren, LogOut } from "lucide-react";
+import { lockApp } from "@/components/PasswordGate";
 import { SEED_CODES, CATEGORY_META, type OperationCode } from "@/data/codes";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -110,6 +111,13 @@ function Index() {
               </Badge>
               <ThemeToggle />
               <AboutDialog />
+              <button
+                onClick={lockApp}
+                aria-label="Déconnexion"
+                className="size-10 rounded-xl border border-border bg-card grid place-items-center hover:bg-destructive/10 hover:text-destructive transition"
+              >
+                <LogOut className="size-4" />
+              </button>
             </div>
           </div>
 
