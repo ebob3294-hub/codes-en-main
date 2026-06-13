@@ -13,6 +13,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { AboutDialog } from "@/components/AboutDialog";
 import { AbbreviationsDialog } from "@/components/AbbreviationsDialog";
+import { PhoneContactsDialog } from "@/components/PhoneContactsDialog";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -109,6 +110,7 @@ function Index() {
                 <Siren className="size-3" />
                 {all.length}
               </Badge>
+              <PhoneContactsDialog />
               <AbbreviationsDialog />
               <ThemeToggle />
               <AboutDialog />
